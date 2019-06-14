@@ -1,0 +1,10 @@
+Lab Task
+
+Task 1
+Create a combo box listing 3 countries including Pakistan, India and USA. Upon selecting a particular country, another combo box appears and shows the list of stats/provinces belonging to that country. Perform this task using AJAX/jQuery and JSON. Create an array using JSON that comprises of states for each particular country.
+
+
+
+Task 2:
+Navigation Menu
+Build a navigation menu that highlights the selected entry.
