@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<friend>
+  <name>
+     <firstName>Shahzad</firstName>
+     <middleName>Nasiruddin</middleName>
+     <lastName>Virani</lastName>
+  </name>
+  <location>
+     <latitude>40.7128</latitude>
+     <longitude>74.0060</longitude>
+     <address>
+        <house>House 1</house>
+        <street>Street B</street>
+        <city>New York City</city>
+        <country>USA</country>
+     <address>
+   </location>
+   <gender>Male</gender>
+</friend>
+
+<friend>
+  <name>
+     <firstName>Travis</firstName>
+     <middleName>Freak</middleName>
+     <lastName>Bickle</lastName>
+  </name>
+  <location>
+     <latitude>40.7128</latitude>
+     <longitude>74.0060</longitude>
+     <address>
+        <house>House 9</house>
+        <street>Street A</street>
+        <city>New York City</city>
+        <country>USA</country>
+     <address>
+   </location>
+   <gender>Male</gender>
+</friend>
+
+<friend>
+  <name>
+     <firstName>Amelie</firstName>
+     <middleName>Frank</middleName>
+     <lastName>Levant</lastName>
+  </name>
+  <location>
+     <latitude>48.8566</latitude>
+     <longitude>2.3522</longitude>
+     <address>
+        <house>House 5</house>
+        <street>Street H</street>
+        <city>Paris</city>
+        <country>France</country>
+     <address>
+   </location>
+   <gender>Female</gender>
+</friend>
+</data>
