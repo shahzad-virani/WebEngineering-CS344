@@ -1,0 +1,23 @@
+Lab Task
+
+Task 1
+BBC is one of the famous public broadcasting company. BBC broadcast news in several ways e.g. television, radio, electronic (via internet) etc. They can be accessed over the internet through their web site: www.bbc.com. The layout of this website can be designed using divisions (DIVs). A screenshot of the website is shown below:
+ 
+When carefully observer this layout, one can easily identify that this design consist of several nested DIVs. Some of the DIVs are highlighted below.
+ 
+
+Desktop View:
+
+ 
+
+Tablet View:  
+ 
+
+
+Smartphone View: 
+Only single column with 100% width.
+Your Tasks:
+1.	Design a web page which has similar layout as shown in the above screenshots. Your layout must be based on DIVs (no tables). 
+2.	Your Design should be responsive with respect to desktop, tablet and smartphone as shown in above pictures.
+Task 2:
+3.	In task 2 students need to create movie cards. For desktop cards are shown in 3 columns and for mobile only one column is used. They need to use border-radius, box-shadows, etc. Basically a normal movie poster will be shown along with its name. Upon hovering over the card more details of the movies are shown with a transition effect.
