@@ -1,0 +1,10 @@
+Lab Task
+Task A:
+Create a Friends XML file that has the following hierarchy. Do this for three friends
+1. Name > FirstName, MiddleName, LastName
+2. Location > Latitude, Longitude, Address (House, Street, City, Country)
+3. Gender
+Task B:
+Create a Google API Key and use the snippet given below for highlighting a location on Google Maps using a marker
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+Make an AJAX call that should read the XML document and load all the friends FULL NAME that are present in the file. Upon selecting a particular friend, his location should be shown on Google Map with the help of a marker
