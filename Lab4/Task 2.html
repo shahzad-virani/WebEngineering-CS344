@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1</title>
+<style>
+	* {
+       box-sizing: border-box;
+    }
+	@media (max-width: 960px){
+		*{
+			width:auto;
+		}
+	}
+	body{
+		background-color: #e0e0d2;
+		margin:0px;
+	}
+	#header{
+		width: 100%;
+		height: 25%;
+	}
+	#header_image{
+		width: 100%;
+	}
+	#review_image{
+		width: 100%;
+		height: 80%;
+		opacity: 1;
+		display: block;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+	
+	#review1:hover #review_image {
+        opacity: 0.3;
+     }
+
+    #review1:hover #middle {
+         opacity: 1;
+     }
+	
+	#review2:hover #review_image {
+        opacity: 0.3;
+     }
+
+    #review2:hover #middle {
+         opacity: 1;
+     }
+	
+	#review3:hover #review_image {
+        opacity: 0.3;
+     }
+
+    #review3:hover #middle {
+         opacity: 1;
+     }
+	
+	#review4:hover #review_image {
+        opacity: 0.3;
+     }
+
+    #review4:hover #middle {
+         opacity: 1;
+     }
+	
+	#review5:hover #review_image {
+        opacity: 0.3;
+     }
+
+    #review5:hover #middle {
+         opacity: 1;
+     }
+	
+	#review6:hover #review_image {
+        opacity: 0.3;
+     }
+
+    #review6:hover #middle {
+         opacity: 1;
+     }
+	
+    h1{
+	    position:absolute;
+	    top:130px;
+	    left:435px;
+	    width:100%;
+    }
+	#content{
+		position: relative;
+	}
+	#review1{
+		position: absolute;
+		top: 30px;
+		left:50px;
+		width:22.5%;
+		background-color:white;
+		text-align: center;
+	}
+	#review2{
+		position: absolute;
+		top: 30px;
+		left: 500px;
+		width:22.5%;
+		background-color:white;
+		text-align: center;
+	}
+	#review3{
+		position: absolute;
+		top: 30px;
+		left: 950px;
+		width:22.5%;
+		background-color:white;
+		text-align: center;
+	}
+	#review4{
+		position: absolute;
+		top:575px;
+		left:50px;
+		width:22.5%;
+		background-color:white;
+		text-align: center;
+	}
+	#review5{
+		position: absolute;
+		top:575px;
+		left:500px;
+		width:22.5%;
+		background-color:white;
+		text-align: center;
+	}
+	#review6{
+		position: absolute;
+		top:575px;
+		left:950px;
+		width:22.5%;
+		background-color:white;
+		text-align: center;
+	}
+	#middle{
+		transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+	}
+	
+</style>
+</head>
+<body>
+<div id="header">
+   <img id="header_image" src="cinema.jpg" />
+</div>
+<div id="content">
+   <div id="review1">
+   <h2>The Big Sick (2017) Review</h2>
+   <img id="review_image" src="bigsick.jpg" />
+   <div id="middle">
+   <div id="text1">
+   <p>Rotten Tomatoes: 92%</p>
+   <p>IMDb: 7.8</p>
+   <p>MetaCritic: 78/100</p>
+   </div>
+   </div>
+   </div>
+   <div id="review2">
+   <h2>Oldboy (2003) Review</h2>
+   <img id="review_image" src="oldboy.jpg" />
+   <div id="middle">
+   <div id="text2">
+   <p>Rotten Tomatoes: 96%</p>
+   <p>IMDb: 9.0</p>
+   <p>MetaCritic: 89/100</p>
+   </div>
+   </div>
+   </div>
+   <div id="review3">
+   <h2>Get Out (2017) Review</h2>
+   <img id="review_image" src="getout.jpg" />
+   <div id="middle">
+   <div id="text3">
+   <p>Rotten Tomatoes: 76%</p>
+   <p>IMDb: 6.0</p>
+   <p>MetaCritic: 59/100</p>
+   </div>
+   </div>
+   </div>
+   <div id="review4">
+   <h2>Manchester (2016) Review</h2>
+   <img id="review_image" src="manchester.jpg" />
+   <div id="middle">
+   <div id="text4">
+   <p>Rotten Tomatoes: 100%</p>
+   <p>IMDb: 8.4</p>
+   <p>MetaCritic: 92/100</p>
+   </div>
+   </div>
+   </div>
+   <div id="review5">
+   <h2>Get Out (2017) Review</h2>
+   <img id="review_image" src="getout.jpg" />
+   <div id="middle">
+   <div id="text5">
+   <p>Rotten Tomatoes: 70%</p>
+   <p>IMDb: 6.9</p>
+   <p>MetaCritic: 60/100</p>
+   </div>
+   </div>
+   </div>
+   <div id ="review6">
+   <h2>Get Out (2017) Review</h2>
+   <img id="review_image" src="getout.jpg" />
+   <div id="middle">
+   <div id="text6">
+   <p>Rotten Tomatoes: 81%</p>
+   <p>IMDb: 7.3</p>
+   <p>MetaCritic: 71/100</p>
+   </div>
+   </div>
+   </div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>
