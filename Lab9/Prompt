@@ -1,0 +1,5 @@
+Lab Task
+Task A:
+•	Create an Image Gallery using jQuery.
+•	There should be options for different categories, upon selecting a category images related to that category should be shown (hide all other images).
+•	Add a click event on images so that you can open an image by clicking on it.
