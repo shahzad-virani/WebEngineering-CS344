@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>task2</title>
+<script>
+	function check() {
+		var score, x, text;
+		
+		x = document.getElementById("password").value;
+		score = 0;
+		
+		if(x.match(/[a-z]/) && x.match(/[A-Z]/) )
+			score = score + 20;
+		if (/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/.test(x))
+			score = score + 20;
+		if (/0123456789/.test(x)){
+			score= score+20;
+		}
+		if (x.length >7)
+			score = score + 20;
+		if(score <20)
+			text = "invalid Password!";
+		else if (score<40)
+			text = "Poor Password!";
+		else if (score <60)
+			text = "Satisfactory Password";
+		else if (score <80)
+			text = "Good Password";
+		if(score <100)
+			text = "Strong Password";
+
+		document.getElementById("out").innerHTML = text;
+		}
+</script>
+</head>
+
+<body>
+   <label>Enter Password:</label>
+   <input type="password" id="password"/>
+	<button type="button" onclick="passCheck()">Submit</button><br></br>
+   <p id="out"></p>
+
+   
+</body>
+</html>

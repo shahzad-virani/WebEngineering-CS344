@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function updateForeign(){
+			if (document.getElementById("options").value="GBR"){
+			    document.getElementById("foreign_value").value = document.getElementById("pkr_value").value/139.18;
+		    }
+		    else if (document.getElementById("options").value="USD"){
+			    document.getElementById("foreign_value").value = document.getElementById("pkr_value").value/105.38;
+		    }
+		    else if (document.getElementById("options").value="Euro"){
+			    document.getElementById("foreign_value").value = document.getElementById("pkr_value").value/124.36;
+		    }
+		}
+		function updateLocal(){
+			if (document.getElementById("options").value="GBR"){
+			    document.getElementById("pkr_value").value = document.getElementById("foreign_value").value*139.18;
+		    }
+		    else if (document.getElementById("options").value="USD"){
+			    document.getElementById("pkr_value").value = document.getElementById("foreign_value").value*105.38;
+		    }
+		    else if (document.getElementById("options").value="Euro"){
+			    document.getElementById("pkr_value").value = document.getElementById("foreign_value").value*124.36;
+		    }
+		}	
+	</script>
+
+	<style>
+	   #pkr_currency{
+	   	position: relative;
+	   }
+	   #foreign_currency{
+	   	position: relative;
+	   }
+	   label{
+	   	position: absolute;
+	   	top:20px;
+	   	left: 10px;
+	   }
+	   #pkr_value{
+        position: absolute;
+        top: 20px;
+        left:60px;
+	   }
+	   #options{
+	   	position:absolute;
+	   	top: 50px;
+	   	left: 2px;
+	   }
+	   #foreign_value{
+	   	position: absolute;
+	   	top:50px;
+	   	left: 60px;
+	   }
+    </style>
+</head>	
+<body>
+	<div id="pkr_currency">
+        <label>PKR:</label>
+		<input type="text" id="pkr_value" onkeydown="updateForeign()" />
+	</div>
+	<div id="foreign_currency">
+		<select id="options"> 
+			<option value="GBR">GBR</option> 
+			<option value="USD">USD</option> 
+			<option value="Euro">Euro</option>
+		</select>
+		<input type="text" id="foreign_value" onkeydown="updateLocal()" />
+	</div>
+</body>
+</html>
