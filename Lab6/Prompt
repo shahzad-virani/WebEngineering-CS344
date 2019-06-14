@@ -1,0 +1,4 @@
+Lab Task
+Basic Mario Game:
+Move the character in spritesheet on the plane provided. He can go from left to right, the walk animation can be created using the sprite sheet provided.
+You can either move the character using left or right arrow keys. An alternative is to provide three HTML buttons named "Left walking", "Right walking", "Stop". Pressing those buttons will produce the appropriate animation sequence.
