@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<style type="text/css">
+      h1{
+         padding: 1px;
+         color: white;
+         background-color: black;
+         clear: left;
+         text-align: center;
+      	}
+
+   	</style>
+
+   	<script>
+	   function passCheck() {
+		var x, text, score;
+		score = 0;
+		x = document.getElementById("pass").value;
+		
+		if (x.length >7)
+			score = score + 20;
+		if (x.match(/\d+/g) != null)
+			score = score + 20;
+		if (/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(x))
+			score = score + 20;
+		if(x.match(/[a-z]/) && x.match(/[A-Z]/) )
+			score = score + 20;
+		if(score <20)
+			text = "invalid Password!";
+		if(score ==20)
+			text = "Poor Strength.";
+		if(score ==40)
+			text = "Bad Strength.";
+		if(score ==60)
+			text = "Good Strength!";
+		if(score ==80)
+			text = "Strong Strength!";
+
+		document.getElementById("out").innerHTML = text;
+		}
+   </script>
+</head>
+
+<body>
+	Enter Password:
+	<input id="pass" type="Password">
+	<button type="button" onclick="passCheck()">Submit</button></br></br>
+	<p id="out"></p>
+
+</body>
+</html>
+

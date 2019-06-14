@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Lab 6</title>
+    <script>
+		var delta = 0;
+		
+		function docReady()
+        {
+            var element = document.getElementById("person");
+            element.style.left = "100px";
+            element.style.backgroundPosition = "0px -300px";
+			window.addEventListener('keydown', moveSelection);
+        	window.addEventListener('keyup', stop);
+        }
+		
+		function rightArrowPressed() {
+	        var element = document.getElementById("person");
+	        element.style.left = parseInt(element.style.left) + 5 + 'px';
+	        delta = delta + 5;
+	        if(delta>15){
+	           var left = element.style.backgroundPosition.split(" ")[0];
+	           console.log(left);
+	           left = left.substring(0, left.length - 2);
+	           console.log(left);
+	           var top = element.style.backgroundPosition.split(" ")[1];
+	           console.log(top);
+	           top = top.substring(0, top.length - 2);
+	           console.log(top);
+	           if(top == -300){
+	        		console.log("im here");
+	        		top = 0;
+	        		left = 0;
+	        	}
+	        	else{
+	        		left = left - 104;
+	        	}
+	        	element.style.backgroundPosition = left +"px " +top +"px";
+	        	delta = delta -15;
+	        }
+        }
+		
+		function leftArrowPressed() {
+            var element = document.getElementById("person");
+            element.style.left = parseInt(element.style.left) - 5 + 'px';
+        	delta = delta - 5;
+        	if(delta<15){
+        		var left = element.style.backgroundPosition.split(" ")[0];
+        		left = left.substring(0, left.length - 2);
+        		var top = element.style.backgroundPosition.split(" ")[1];
+        		top = top.substring(0, top.length - 2);
+        		   if(top == -300){
+        			top = -150;
+        			left = 0;
+				   }
+                   else{
+        			left = left - 104;
+				   }
+        		delta = delta +15;
+	        	element.style.backgroundPosition = left +"px " +top +"px";
+        	}
+        }
+
+        function moveSelection(evt) {
+            switch (evt.keyCode) {
+                 case 37:
+                 leftArrowPressed();
+                 break;
+                 case 39:
+                 rightArrowPressed();
+                 break;
+                 }
+             };
+
+            function stop(evt){
+	            var element = document.getElementById("person");
+                delta = 0;
+                switch (evt.keyCode) {
+                    case 37:
+	        		element.style.backgroundPosition = "-104px -300px";
+                    break;
+                    case 39:
+	        		element.style.backgroundPosition = "0px -300px";
+                    break;
+                    }
+                };
+	</script>
+
+  <style>
+  	img{
+  		position: absolute;
+  	}
+
+  	img#person{
+  		width: 90px;
+    	height: 150px;
+    	background: url("spritesheet.png") 0 -300px;
+
+  		top:145px;
+  		z-index: 1;
+  		animation-duration: 1s;
+  		animation-iteration-count: infinite;
+  		animation-timing-function: linear;
+  		animation-fill-mode: forwards;
+  		border:0px;
+  	}
+  
+  	img#bg{
+  		width:100%;
+  		z-index: -1;
+  	}
+
+  </style>
+  </head>
+
+<body onload="docReady()" onkeydown="" onkeyup="" bgcolor='black' >
+  <img id="person"/>
+  <img id="bg" src="background.jpg"/>
+  
+  </body>
+</html>
