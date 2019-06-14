@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>task 1</title>
+<style>
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	
+	}
+	
+	li {
+    float: left;
+	border-right: 1px solid #BBBBBB;
+	}
+	
+	li:last-child {
+    border-right: none;
+    }
+	
+	a {
+    display: block;
+    padding: 8px;
+	background-color: #c00;
+    }
+	
+	li a{
+		display:block;
+		color:white;
+		text-align:center;
+		padding: 14px 16px;
+		text-decoration:none;
+		transition: background-color 2s; 
+	    -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:transform .8s ease-in-out;
+	}
+	
+	li a:hover{
+		background-color:#00c;
+		-webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+</style>
+</head>
+<body>
+   <ul>
+      <li><a>Home</a></li>
+      <li><a>News</a></li>
+      <li><a>Reviews</a></li>
+      <li><a>Contact</a></li>
+      <li><a>About Us</a></li>
+   </ul>
+</body>
+</html>
