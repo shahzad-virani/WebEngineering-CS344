@@ -1,0 +1,41 @@
+Task 1
+Your task is to create a static multi-column personal web site, a portfolio, of yourself.  Your portfolio website must contain following (Hint: Elon Musk CV)
+•	A Profile: This is the first page that a visitor will see when he visits your web site. Here you can include any interesting images and/or any motivation text, which can be interesting for the visitor of your website. 
+•	An About Me : Here you have to explain about yourself. You can include anything related to you e.g. your interests, your hobbies, books you like to read, sports etc. You can use different types of HTML tags in this page e.g. headings, ordered/unordered lists, tables, hyperlinks etc. 
+•	Experience : Here you have to specify your experience in computers or any other skills. You can use ordered lists/unordered lists etc. when creating this HTML page.
+•	Education : In this page, you have to specify information related to your education. Feel free to use HTML tables or any other relevant tags here.
+•	Skills: your skills i.e. programmer etc
+ 
+Task2:
+Using Iframes create a dictionary. It will have 2 sections one for words and the other for their description/meaning. By clicking on different words the right window(iframe) should change the content accordingly. (Hint: using target attribute you can select iframe for your output)
+You can define an inline frame with HTML tag <iframe>. The <iframe> tag is not somehow related to <frameset> tag, instead, it can appear anywhere in your document. The <iframe> tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.
+The src attribute is used to specify the URL of the document that occupies the inline frame.
+Example
+Following is the example to show how to use the <iframe> −
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Iframes</title>
+   </head>
+	
+   <body>
+      <p>Document content goes here...</p>
+      
+      <iframe src = "/html/menu.htm" width = "555" height = "200">
+         Sorry your browser does not support inline frames.
+      </iframe>
+      
+      <p>Document content also go here...</p>
+   </body>
+	
+</html>
+
+Hints
+1.	Feel free to browse online and see how people have organized their portfolio web sites. This will help you to get fresh ideas in designing and organizing contents of your web site. 
+2.	You are encouraged to use most of the HTML tags you have learned so far or even new tags, which you can learn from W3Schools.
+3.	Make good use of HTML colors, fonts, font-family, font-sizes and other styles for the look and feel of your personal website.
+4.	Grading will be based on following:
+a.	Design of your website: color scheme, fonts, styles etc.
+b.	Website contents and their organization
+c.	Look and feel of your website
